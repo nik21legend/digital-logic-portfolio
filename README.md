@@ -12,6 +12,7 @@ built and checked against its truth table.
 | nor-only/ | NOT, OR, AND from NOR gates only | NOT = 1 NOR, OR = 2, AND = 3 |
 | adders/ | Half adder and full adder | Sum = A xor B xor Cin; carry-out is 1 when at least two inputs are 1; checked on all input combinations |
 | subtractors/ | Half and full subtractor | D = A xor B xor Bin; Bo = A'B + A'Bin + B.Bin; checked on all input combinations |
+| comparator/ | 2-bit magnitude comparator (A>B, A=B, A<B) | Built from SOP expressions; 16 input combinations x 3 outputs |
 
 ## Method
 
