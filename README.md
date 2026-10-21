@@ -13,6 +13,7 @@ built and checked against its truth table.
 | adders/ | Half adder and full adder | Sum = A xor B xor Cin; carry-out is 1 when at least two inputs are 1; checked on all input combinations |
 | subtractors/ | Half and full subtractor | D = A xor B xor Bin; Bo = A'B + A'Bin + B.Bin; checked on all input combinations |
 | comparator/ | 2-bit magnitude comparator (A>B, A=B, A<B) | Built from SOP expressions; 16 input combinations x 3 outputs |
+| mux/ | 4x1 MUX (gate-level) | Y = S1'S0'D0 + S1'S0D1 + S1S0'D2 + S1S0D3; each data path tested; also used to implement F = Sigma m(1,2,6,7) |
 
 ## Method
 
@@ -23,6 +24,6 @@ built and checked against its truth table.
 
 ## Coming next
 
-Comparator, MUX/DEMUX, encoder/decoder, 4-bit ripple-carry adder, 4-bit counter.
+DEMUX, encoder/decoder, 4-bit ripple-carry adder, flip-flops, 4-bit counter.
 
 Tool: CircuitVerse (circuitverse.org)
